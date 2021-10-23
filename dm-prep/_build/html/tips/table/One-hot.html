@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>テーブルの列を列名のパターンマッチで選択 &#8212; 前処理の方法</title>
+    <title>One-hot &#8212; 前処理の方法</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,6 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
-    <link rel="next" title="テーブル全体を一括で特徴ベクトルにする" href="%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%85%A8%E4%BD%93%E3%82%92%E4%B8%80%E6%8B%AC%E3%81%A7%E7%89%B9%E5%BE%B4%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E3%81%AB%E3%81%99%E3%82%8B.html" />
-    <link rel="prev" title="はじめに" href="../../intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -96,9 +94,9 @@
   テーブルデータ処理
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%81%AE%E5%88%97%E3%82%92%E5%88%97%E5%90%8D%E3%81%AE%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%83%9E%E3%83%83%E3%83%81%E3%81%A7%E9%81%B8%E6%8A%9E.html">
    テーブルの列を列名のパターンマッチで選択
   </a>
  </li>
@@ -156,7 +154,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/tips/table/テーブルの列を列名のパターンマッチで選択.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/tips/table/One-hot.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="ソースファイルをダウンロード" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -176,7 +174,7 @@
                 data-toggle="tooltip" data-placement="left" title="ソースリポジトリ"><i
                     class="fab fa-github"></i>リポジトリ</button></a>
         <a class="issues-button"
-            href="https://github.com/k-datamining/dm-book/issues/new?title=Issue%20on%20page%20%2Ftips/table/テーブルの列を列名のパターンマッチで選択.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/k-datamining/dm-book/issues/new?title=Issue%20on%20page%20%2Ftips/table/One-hot.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="問題を開く"><i class="fas fa-lightbulb"></i>未解決の問題</button></a>
         
@@ -197,7 +195,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/k-datamining/dm-book/main?urlpath=tree/docs/tips/table/テーブルの列を列名のパターンマッチで選択.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/k-datamining/dm-book/main?urlpath=tree/docs/tips/table/One-hot.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="発売 Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
@@ -220,13 +218,18 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
+  <a class="reference internal nav-link" href="#id1">
    サンプルデータ
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sklearn-compose-make-column-selector">
-   sklearn.compose.make_column_selector
+  <a class="reference internal nav-link" href="#onehotencoder">
+   OneHotEncoder
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   結果を確認する
   </a>
  </li>
 </ul>
@@ -240,10 +243,10 @@
         
               <div>
                 
-  <div class="section" id="id1">
-<h1>テーブルの列を列名のパターンマッチで選択<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<div class="section" id="id2">
-<h2>サンプルデータ<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+  <div class="section" id="one-hot">
+<h1>One-hot<a class="headerlink" href="#one-hot" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id1">
+<h2>サンプルデータ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -325,26 +328,38 @@
 </div></div></div>
 </div>
 </div>
-<div class="section" id="sklearn-compose-make-column-selector">
-<h2>sklearn.compose.make_column_selector<a class="headerlink" href="#sklearn-compose-make-column-selector" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.make_column_selector.html">sklearn.compose.make_column_selector</a>
-を使用します。</p>
+<div class="section" id="onehotencoder">
+<h2>OneHotEncoder<a class="headerlink" href="#onehotencoder" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.OneHotEncoder.html">sklearn.preprocessing.OneHotEncoder</a></p></li>
+<li><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.make_column_transformer.html">sklearn.compose.make_column_transformer</a>
+を使用します。</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">OneHotEncoder</span>
-<span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
 <span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">make_column_transformer</span>
-<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">make_column_selector</span>
 
-<span class="n">n_ss</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">c_oh</span> <span class="o">=</span> <span class="n">OneHotEncoder</span><span class="p">()</span>
 
-<span class="c1"># 暦が含まれる列のみスケーリング</span>
 <span class="n">ct</span> <span class="o">=</span> <span class="n">make_column_transformer</span><span class="p">(</span>
-    <span class="p">(</span><span class="n">n_ss</span><span class="p">,</span> <span class="n">make_column_selector</span><span class="p">(</span><span class="n">pattern</span><span class="o">=</span><span class="s2">&quot;暦&quot;</span><span class="p">)),</span> <span class="n">sparse_threshold</span><span class="o">=</span><span class="mi">0</span>
+    <span class="p">(</span><span class="n">c_oh</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;元号&quot;</span><span class="p">]),</span>  <span class="c1"># カテゴリ変数にonehotを適用するように指定</span>
+    <span class="n">sparse_threshold</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>  <span class="c1"># 結果の行列をdenseな行列にする</span>
 <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>結果を確認する<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>元号（大正・昭和・平成）が三次元のベクトルになっていることが確認できます。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 変換方法を求めて、変換した結果を返す</span>
 <span class="n">X_transform</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
 
-<span class="c1"># 変換後のテーブル</span>
+<span class="c1"># 変換後のテーブルを表示</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">X_transform</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -370,33 +385,39 @@
       <th></th>
       <th>0</th>
       <th>1</th>
+      <th>2</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>-0.946623</td>
-      <td>-1.665466</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>-0.946623</td>
-      <td>-1.665466</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>-0.946623</td>
-      <td>-1.665466</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>-0.946623</td>
-      <td>-1.665466</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>-0.946623</td>
-      <td>-1.665466</td>
+      <td>1.0</td>
+      <td>0.0</td>
+      <td>0.0</td>
     </tr>
   </tbody>
 </table>
@@ -434,24 +455,6 @@
 
 <div class='prev-next-bottom'>
     
-    <div id="prev">
-        <a class="left-prev" href="../../intro.html" title="前へ ページ">
-            <i class="prevnext-label fas fa-angle-left"></i>
-            <div class="prevnext-info">
-                <p class="prevnext-label">前へ</p>
-                <p class="prevnext-title">はじめに</p>
-            </div>
-        </a>
-    </div>
-     <div id="next">
-        <a class="right-next" href="%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%85%A8%E4%BD%93%E3%82%92%E4%B8%80%E6%8B%AC%E3%81%A7%E7%89%B9%E5%BE%B4%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E3%81%AB%E3%81%99%E3%82%8B.html" title="次へ ページ">
-            <div class="prevnext-info">
-                <p class="prevnext-label">次へ</p>
-                <p class="prevnext-title">テーブル全体を一括で特徴ベクトルにする</p>
-            </div>
-            <i class="prevnext-label fas fa-angle-right"></i>
-        </a>
-     </div>
 
 </div>
         

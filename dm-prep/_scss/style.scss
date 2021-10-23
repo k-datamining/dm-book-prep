@@ -30,7 +30,35 @@ div.dropdown-buttons-trigger {
     }
 }
 
-div#site-navigation  {
-    background: lightsteelblue !important;
+div#site-navigation {
+    background: #ced4da;
 }
 
+footer {
+    div.container p:nth-child(1) {
+        display: none;
+    }
+}
+
+div.social-buttons {
+    li {
+        display: inline;
+    }
+}
+
+
+div.extra-nav {
+
+    li {
+        list-style: none;
+        text-align: left;
+    }
+
+    li.ttl {
+        font-weight: bold;
+    }
+
+    li.itm {
+        margin-left: 1em;
+    }
+}
