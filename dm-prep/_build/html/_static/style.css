@@ -1,0 +1,22 @@
+body {
+  font-family: "M PLUS 1p";
+}
+
+div.section h1 {
+  font-size: 1.5em;
+}
+
+div.section h2,
+div.section h3,
+div.section h4 {
+  font-size: 1.3em;
+}
+
+ul.bd-sidenav:nth-child(n + 1) {
+  margin-left: 1em;
+}
+
+button#dropdown-buttons-trigger {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

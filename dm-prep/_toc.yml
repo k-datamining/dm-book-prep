@@ -1,0 +1,10 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+parts:
+- caption: テーブルデータ処理
+  chapters:
+  - file: tips/table/テーブルの列を列名のパターンマッチで選択.ipynb
+  - file: tips/table/テーブル全体を一括で特徴ベクトルにする.ipynb
