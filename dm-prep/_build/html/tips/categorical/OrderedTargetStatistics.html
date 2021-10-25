@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>テーブルの列を列名のパターンマッチで選択 &#8212; 前処理の方法</title>
+    <title>Ordered Target Statistics &#8212; 前処理の方法</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet" />
   <link href="../../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -54,8 +54,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="索引" href="../../genindex.html" />
     <link rel="search" title="検索" href="../../search.html" />
-    <link rel="next" title="テーブル全体を一括で特徴ベクトルにする" href="%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%85%A8%E4%BD%93%E3%82%92%E4%B8%80%E6%8B%AC%E3%81%A7%E7%89%B9%E5%BE%B4%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E3%81%AB%E3%81%99%E3%82%8B.html" />
-    <link rel="prev" title="Ordered Target Statistics" href="../categorical/OrderedTargetStatistics.html" />
+    <link rel="next" title="テーブルの列を列名のパターンマッチで選択" href="../table/%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%81%AE%E5%88%97%E3%82%92%E5%88%97%E5%90%8D%E3%81%AE%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%83%9E%E3%83%83%E3%83%81%E3%81%A7%E9%81%B8%E6%8A%9E.html" />
+    <link rel="prev" title="CountEncoder" href="CountEncoder.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -96,24 +96,24 @@
   カテゴリカル変数
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../categorical/Onehot.html">
+  <a class="reference internal" href="Onehot.html">
    One-hot
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../categorical/TargetEncoder.html">
+  <a class="reference internal" href="TargetEncoder.html">
    Target Encoder
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../categorical/CountEncoder.html">
+  <a class="reference internal" href="CountEncoder.html">
    CountEncoder
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../categorical/OrderedTargetStatistics.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Ordered Target Statistics
   </a>
  </li>
@@ -123,14 +123,14 @@
   テーブルデータ処理
  </span>
 </p>
-<ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../table/%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%81%AE%E5%88%97%E3%82%92%E5%88%97%E5%90%8D%E3%81%AE%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%83%9E%E3%83%83%E3%83%81%E3%81%A7%E9%81%B8%E6%8A%9E.html">
    テーブルの列を列名のパターンマッチで選択
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%85%A8%E4%BD%93%E3%82%92%E4%B8%80%E6%8B%AC%E3%81%A7%E7%89%B9%E5%BE%B4%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E3%81%AB%E3%81%99%E3%82%8B.html">
+  <a class="reference internal" href="../table/%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%85%A8%E4%BD%93%E3%82%92%E4%B8%80%E6%8B%AC%E3%81%A7%E7%89%B9%E5%BE%B4%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E3%81%AB%E3%81%99%E3%82%8B.html">
    テーブル全体を一括で特徴ベクトルにする
   </a>
  </li>
@@ -183,7 +183,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/tips/table/テーブルの列を列名のパターンマッチで選択.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/tips/categorical/OrderedTargetStatistics.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="ソースファイルをダウンロード" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -203,7 +203,7 @@
                 data-toggle="tooltip" data-placement="left" title="ソースリポジトリ"><i
                     class="fab fa-github"></i>リポジトリ</button></a>
         <a class="issues-button"
-            href="https://github.com/k-datamining/dm-book/issues/new?title=Issue%20on%20page%20%2Ftips/table/テーブルの列を列名のパターンマッチで選択.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/k-datamining/dm-book/issues/new?title=Issue%20on%20page%20%2Ftips/categorical/OrderedTargetStatistics.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="問題を開く"><i class="fas fa-lightbulb"></i>未解決の問題</button></a>
         
@@ -224,7 +224,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/k-datamining/dm-book/main?urlpath=tree/docs/tips/table/テーブルの列を列名のパターンマッチで選択.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/k-datamining/dm-book/main?urlpath=tree/docs/tips/categorical/OrderedTargetStatistics.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="発売 Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="../../_static/images/logo_binder.svg"
@@ -247,13 +247,23 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id2">
+  <a class="reference internal nav-link" href="#id1">
    サンプルデータ
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#sklearn-compose-make-column-selector">
-   sklearn.compose.make_column_selector
+  <a class="reference internal nav-link" href="#id2">
+   Ordered Target Statistics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   結果を確認する
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   エンコード結果の分布を確認する
   </a>
  </li>
 </ul>
@@ -267,15 +277,19 @@
         
               <div>
                 
-  <div class="section" id="id1">
-<h1>テーブルの列を列名のパターンマッチで選択<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
-<div class="section" id="id2">
-<h2>サンプルデータ<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+  <div class="section" id="ordered-target-statistics">
+<h1>Ordered Target Statistics<a class="headerlink" href="#ordered-target-statistics" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<p>参考文献：Prokhorenkova, Liudmila, et al. &quot;CatBoost: unbiased boosting with categorical features.&quot; arXiv preprint arXiv:1706.09516 (2017).</p>
+<div class="section" id="id1">
+<h2>サンプルデータ<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>「人口総数」を予測したいとして、「元号」をエンコードしたいとします。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="n">X</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../../data/sample.csv&quot;</span><span class="p">)</span>
+<span class="n">TARGET_NAME</span> <span class="o">=</span> <span class="s2">&quot;人口総数&quot;</span>
+<span class="n">FEATURE_NAME</span> <span class="o">=</span> <span class="s2">&quot;元号&quot;</span>
 <span class="n">X</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -352,26 +366,33 @@
 </div></div></div>
 </div>
 </div>
-<div class="section" id="sklearn-compose-make-column-selector">
-<h2>sklearn.compose.make_column_selector<a class="headerlink" href="#sklearn-compose-make-column-selector" title="このヘッドラインへのパーマリンク">¶</a></h2>
-<p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.make_column_selector.html">sklearn.compose.make_column_selector</a>
-を使用します。<code class="docutils literal notranslate"><span class="pre">pattern=&quot;暦&quot;</span></code>で暦が含まれる列を選択し、StandardScalerを適用します。</p>
+<div class="section" id="id2">
+<h2>Ordered Target Statistics<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://contrib.scikit-learn.org/category_encoders/catboost.html">category_encoders.cat_boost.CatBoostEncoder</a></p></li>
+<li><p><a class="reference external" href="https://scikit-learn.org/stable/modules/generated/sklearn.compose.make_column_transformer.html">sklearn.compose.make_column_transformer</a></p></li>
+</ul>
+<p>を使用します。</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="kn">import</span> <span class="n">StandardScaler</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">category_encoders.cat_boost</span> <span class="kn">import</span> <span class="n">CatBoostEncoder</span>
 <span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">make_column_transformer</span>
-<span class="kn">from</span> <span class="nn">sklearn.compose</span> <span class="kn">import</span> <span class="n">make_column_selector</span>
 
-<span class="n">n_ss</span> <span class="o">=</span> <span class="n">StandardScaler</span><span class="p">()</span>
+<span class="n">c_ots</span> <span class="o">=</span> <span class="n">CatBoostEncoder</span><span class="p">()</span>
 
-<span class="c1"># 暦が含まれる列のみスケーリング</span>
-<span class="n">ct</span> <span class="o">=</span> <span class="n">make_column_transformer</span><span class="p">(</span>
-    <span class="p">(</span><span class="n">n_ss</span><span class="p">,</span> <span class="n">make_column_selector</span><span class="p">(</span><span class="n">pattern</span><span class="o">=</span><span class="s2">&quot;暦&quot;</span><span class="p">)),</span> <span class="n">sparse_threshold</span><span class="o">=</span><span class="mi">0</span>
-<span class="p">)</span>
-<span class="n">X_transform</span> <span class="o">=</span> <span class="n">ct</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
-
-<span class="c1"># 変換後のテーブル</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">X_transform</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">X</span><span class="p">[</span><span class="n">TARGET_NAME</span><span class="p">]</span>
+<span class="n">X</span><span class="p">[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">FEATURE_NAME</span><span class="si">}</span><span class="s2">_ots&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">c_ots</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">FEATURE_NAME</span><span class="p">],</span> <span class="n">y</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>結果を確認する<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>カテゴリ変数の列が <code class="docutils literal notranslate"><span class="pre">CatBoostEncoder</span></code> でエンコードされていることを確認します。</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">X</span><span class="p">[[</span><span class="n">FEATURE_NAME</span><span class="p">,</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">FEATURE_NAME</span><span class="si">}</span><span class="s2">_ots&quot;</span><span class="p">]]</span>
 </pre></div>
 </div>
 </div>
@@ -394,39 +415,96 @@
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>0</th>
-      <th>1</th>
+      <th>元号</th>
+      <th>元号_ots</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>-0.946623</td>
-      <td>-1.665466</td>
+      <td>大正</td>
+      <td>109247.087755</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>-0.946623</td>
-      <td>-1.665466</td>
+      <td>大正</td>
+      <td>251997.543878</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>-0.946623</td>
-      <td>-1.665466</td>
+      <td>大正</td>
+      <td>178472.029252</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>-0.946623</td>
-      <td>-1.665466</td>
+      <td>大正</td>
+      <td>190602.271939</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>-0.946623</td>
-      <td>-1.665466</td>
+      <td>大正</td>
+      <td>203219.617551</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>975</th>
+      <td>平成</td>
+      <td>101664.388810</td>
+    </tr>
+    <tr>
+      <th>976</th>
+      <td>平成</td>
+      <td>101406.646760</td>
+    </tr>
+    <tr>
+      <th>977</th>
+      <td>平成</td>
+      <td>101126.513717</td>
+    </tr>
+    <tr>
+      <th>978</th>
+      <td>平成</td>
+      <td>100845.716013</td>
+    </tr>
+    <tr>
+      <th>979</th>
+      <td>平成</td>
+      <td>100588.073626</td>
     </tr>
   </tbody>
 </table>
+<p>980 rows × 2 columns</p>
 </div></div></div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>エンコード結果の分布を確認する<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">japanize_matplotlib</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">ci</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">FEATURE_NAME</span><span class="p">]</span><span class="o">.</span><span class="n">unique</span><span class="p">()):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span>
+        <span class="n">X</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">FEATURE_NAME</span><span class="si">}</span><span class="s2">==&#39;</span><span class="si">{</span><span class="n">ci</span><span class="si">}</span><span class="s2">&#39;&quot;</span><span class="p">)[</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">FEATURE_NAME</span><span class="si">}</span><span class="s2">_ots&quot;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="n">ci</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span>
+    <span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;エンコードされた結果の分布&quot;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">FEATURE_NAME</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;matplotlib.legend.Legend at 0x7fc04b515700&gt;
+</pre></div>
+</div>
+<img alt="../../_images/OrderedTargetStatistics_7_1.png" src="../../_images/OrderedTargetStatistics_7_1.png" />
+</div>
 </div>
 </div>
 </div>
@@ -444,7 +522,7 @@
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./tips/table"
+            path: "./tips/categorical"
         },
         predefinedOutput: true
     }
@@ -461,19 +539,19 @@
 <div class='prev-next-bottom'>
     
     <div id="prev">
-        <a class="left-prev" href="../categorical/OrderedTargetStatistics.html" title="前へ ページ">
+        <a class="left-prev" href="CountEncoder.html" title="前へ ページ">
             <i class="prevnext-label fas fa-angle-left"></i>
             <div class="prevnext-info">
                 <p class="prevnext-label">前へ</p>
-                <p class="prevnext-title">Ordered Target Statistics</p>
+                <p class="prevnext-title">CountEncoder</p>
             </div>
         </a>
     </div>
      <div id="next">
-        <a class="right-next" href="%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E5%85%A8%E4%BD%93%E3%82%92%E4%B8%80%E6%8B%AC%E3%81%A7%E7%89%B9%E5%BE%B4%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E3%81%AB%E3%81%99%E3%82%8B.html" title="次へ ページ">
+        <a class="right-next" href="../table/%E3%83%86%E3%83%BC%E3%83%96%E3%83%AB%E3%81%AE%E5%88%97%E3%82%92%E5%88%97%E5%90%8D%E3%81%AE%E3%83%91%E3%82%BF%E3%83%BC%E3%83%B3%E3%83%9E%E3%83%83%E3%83%81%E3%81%A7%E9%81%B8%E6%8A%9E.html" title="次へ ページ">
             <div class="prevnext-info">
                 <p class="prevnext-label">次へ</p>
-                <p class="prevnext-title">テーブル全体を一括で特徴ベクトルにする</p>
+                <p class="prevnext-title">テーブルの列を列名のパターンマッチで選択</p>
             </div>
             <i class="prevnext-label fas fa-angle-right"></i>
         </a>
