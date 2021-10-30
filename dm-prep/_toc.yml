@@ -4,6 +4,11 @@
 format: jb-book
 root: intro
 parts:
+- caption: データの読み込み・集約
+  chapters:
+  - file: tips/data/サンプルデータ.ipynb
+  - file: tips/data/SQLでデータを操作する.ipynb
+  - file: tips/data/データから数値を読み取る.ipynb
 - caption: カテゴリカル変数
   chapters:
   - file: tips/categorical/Onehot.ipynb

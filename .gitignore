@@ -1,5 +1,6 @@
 ﻿# _build
 dm-metrics/_build
+dm-prep/_build
 .vscode/
 
 # log
