@@ -4,6 +4,9 @@
 format: jb-book
 root: intro
 parts:
+- caption: データの中身を確認する
+  chapters:
+  - file: tips/info/how_to_use_data.md
 - caption: データの読み込み・集約
   chapters:
   - file: tips/data/サンプルデータ.ipynb
