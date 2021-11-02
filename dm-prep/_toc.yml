@@ -16,8 +16,10 @@ parts:
 - caption: 数値
   chapters:
   - file: tips/numerical/数値をbinで分ける.ipynb
-  - file: tips/numerical/対数変換.ipynb
+  - file: tips/numerical/BoxCox変換.ipynb
   - file: tips/numerical/YeoJonson変換.ipynb
+  - file: tips/numerical/外れ値にラベルをつける.ipynb
+  - file: tips/numerical/外れ値にラベルをつける②.ipynb
 - caption: カテゴリ
   chapters:
   - file: tips/categorical/Onehot.ipynb
