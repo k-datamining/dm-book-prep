@@ -13,7 +13,12 @@ parts:
   - file: tips/data/pandasでよく使う操作.ipynb
   - file: tips/data/データから数値を読み取る.ipynb
   - file: tips/data/SQLでデータを操作する.ipynb
-- caption: カテゴリカル変数
+- caption: 数値
+  chapters:
+  - file: tips/numerical/数値をbinで分ける.ipynb
+  - file: tips/numerical/対数変換.ipynb
+  - file: tips/numerical/YeoJonson変換.ipynb
+- caption: カテゴリ
   chapters:
   - file: tips/categorical/Onehot.ipynb
   - file: tips/categorical/TargetEncoder.ipynb
