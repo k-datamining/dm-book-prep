@@ -2,8 +2,8 @@
 
 このページは以下の youtube で使用したコードを公開するページです。
 
-- [youtube(動画)](http://www.youtube.com/channel/UCFy3VBvZBeE9bN0F2sxF8rg?sub_confirmation=1)
-- [speakerdeck(動画で使用したスライド)](https://speakerdeck.com/k_study)
+- [youtube](https://www.youtube.com/channel/UCFy3VBvZBeE9bN0F2sxF8rg/videos)
+- [speakerdeck](https://speakerdeck.com/k_study)
 - [twitter](https://twitter.com/ks_study_ml)
 
 # この資料は何？
