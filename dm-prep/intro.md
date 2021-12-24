@@ -1,14 +1,6 @@
-# はじめに
-
-このページは以下の youtube で使用したコードを公開するページです。
-
-- [youtube](https://www.youtube.com/channel/UCFy3VBvZBeE9bN0F2sxF8rg/videos)
-- [speakerdeck](https://speakerdeck.com/k_study)
-- [twitter](https://twitter.com/ks_study_ml)
-
 # この資料は何？
 
-機械学習でよく使用されるデータ前処理方法について説明する資料です。
+機械学習でよく使用されるデータ前処理方法について、自分の勉強した内容を記録する資料です。
 
 - 数値データ
 - カテゴリ変数・名義尺度
