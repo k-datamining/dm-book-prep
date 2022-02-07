@@ -19,6 +19,10 @@ category-encoders = "^2.3.0"
 lxml = "^4.6.3"
 seaborn = "^0.11.2"
 tqdm = "^4.62.3"
+tabula-py = "^2.3.0"
+camelot-py = "^0.10.1"
+opencv-contrib-python = "^4.5.5"
+ghostscript = "^0.7"
 
 [tool.poetry.dev-dependencies]
 black = "^21.9b0"

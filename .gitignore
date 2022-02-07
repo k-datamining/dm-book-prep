@@ -3,6 +3,10 @@ dm-metrics/_build
 dm-prep/_build
 .vscode/
 
+# サンプルデータ
+flex-lng-earnings-release-q3-2021.pdf
+決算発表スケジュール　_企業業績・財務　_マーケット　_日経電子版.pdf
+
 # log
 note.md
 nohup.out
