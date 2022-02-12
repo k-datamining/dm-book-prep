@@ -23,6 +23,7 @@ tabula-py = "^2.3.0"
 camelot-py = "^0.10.1"
 opencv-contrib-python = "^4.5.5"
 ghostscript = "^0.7"
+sec-edgar-downloader = "^4.3.0"
 
 [tool.poetry.dev-dependencies]
 black = "^21.9b0"

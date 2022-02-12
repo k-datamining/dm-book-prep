@@ -29,6 +29,7 @@ parts:
 - caption: テーブルデータ処理
   chapters:
   - file: tips/table/pdfからテーブルを抽出する.ipynb
+  - file: tips/api/SEC_EDGAR.ipynb
   - file: tips/table/データ処理の進捗を表示する.ipynb
   - file: tips/table/テーブルの列を列名のパターンマッチで選択.ipynb
   - file: tips/table/テーブル全体を一括で特徴ベクトルにする.ipynb
