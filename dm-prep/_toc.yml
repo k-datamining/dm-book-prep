@@ -36,6 +36,11 @@ parts:
   chapters:
   - file: tips/api/SEC_EDGAR.ipynb
   - file: tips/api/deeplで論文を翻訳する.ipynb
+- caption: pandasの便利ツール
+  chapters:
+  - file: tips/pandas/pandas-profiling.ipynb
+  - file: tips/pandas/sweetviz.ipynb
+  - file: tips/pandas/PandasGUI.ipynb
 - caption: 参考文献・補足資料
   chapters:
   - file: references.md

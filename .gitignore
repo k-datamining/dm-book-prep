@@ -2,6 +2,7 @@
 dm-metrics/_build
 dm-prep/_build
 .vscode/
+example/
 
 # サンプルデータ
 実行例.ipynb
