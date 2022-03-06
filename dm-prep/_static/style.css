@@ -71,4 +71,21 @@ div.hint p.admonition-title::before {
   content: "ドキュメントへのリンク" !important;
   width: 12em !important;
 }
+
+#site-navigation {
+  height: 102.5vh !important;
+  overflow-x: hidden !important;
+}
+
+table.dataframe th,
+table.dataframe td {
+  font-size: 0.9em !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+}
+
+div.social-buttons a.reference {
+  position: relative;
+  top: -6px;
+}
 /*# sourceMappingURL=style.css.map */

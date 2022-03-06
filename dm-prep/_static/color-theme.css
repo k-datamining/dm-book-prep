@@ -1,7 +1,7 @@
 ﻿body {
-    background-color: #ced4da;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
 }
 
 div#site-navigation {
-    background: #ced4da;
+    background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
 }
