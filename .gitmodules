@@ -1,3 +1,0 @@
-[submodule "dm-metrics/_scss"]
-	path = dm-metrics/_scss
-	url = git@github.com:k-datamining/dm-book-css.git
