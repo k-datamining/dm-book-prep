@@ -1,7 +1,6 @@
 @charset "UTF-8";
 body {
   font-family: "M PLUS 1p";
-  background-color: #ced4da;
 }
 
 main {
@@ -41,10 +40,6 @@ div.dropdown-buttons-trigger i.fa-rocket {
 
 div.dropdown-buttons-trigger a.binder-button {
   display: none;
-}
-
-div#site-navigation {
-  background: #ced4da;
 }
 
 footer div.container p:nth-child(1) {
