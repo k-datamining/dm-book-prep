@@ -1,6 +1,8 @@
 @charset "UTF-8";
 body {
   font-family: "M PLUS 1p";
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#e4e4e4), color-stop(80%, white));
+  background-image: linear-gradient(to top, #e4e4e4 0%, white 80%);
 }
 
 main {
